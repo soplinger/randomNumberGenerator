@@ -4,23 +4,30 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int amt;
-
+        int num, amt;
+        String userInput;
         Scanner kbInput = new Scanner(System.in);
-        System.out.println("Would you like to run the test 100, 1,000, or  10,000 times?");
-        amt = kbInput.next();
-        int numArray[] = new int[amt];
-        int random = (int)Math.random() * amt;
-        System.out.println(random);
+        Random rndm = new Random();
+        boolean runRndm = true;
 
-        if (amt == 100){
+        while(runRndm = true){
+            System.out.println("Would you like to run the test 100, 1000, or  10000 times?");
+            userInput = kbInput.next();
+
+            int numArray[] = new int[amt];
+
+            if (amt == 100){
+                num = rndm.nextInt(101);
+                System.out.println(num);
+            }
+
+
 
         }
-        else if (amt == 1000){
-
-
-
-        }
-        else if (amt == 10000){
     }
 }
+
+
+
+
+
